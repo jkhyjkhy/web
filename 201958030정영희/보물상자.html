@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>히든 퀘스트</title>
+        <style>
+        html {background-color: cornsilk;}
+        </style>
+    </head>
+    <body>
+        <a href="WOW.html"><h3 style="text-align: center">보물상자 발견!</h3></a>
+        <audio src="media/call to arms.mp3" controls="controls"></audio>
+       <p id="now"></p>
+       <script>
+        var time = new Date();
+        document.getElementById("now").innerHTML = time;
+        </script>
+        <hr>
+        <form>
+            <fieldset>
+                <legend>페이지의 점수!(5점 만점)</legend>
+                5점!!<input type="radio" name="score" value="5" checked>
+                4점! <input type="radio" name="score" value="4">
+                3점  <input type="radio" name="score" value="3">
+                2점. <input type="radio" name="score" value="2">
+                1점..<input type="radio" name="score" value="1">
+            </fieldset>
+            <fieldset>
+                <legend>당신의 진영은?</legend>
+               호드<input type="radio" name="union" value="호드">
+               얼라이언스<input type="radio" name="union" value="얼라이언스">
+               이중 간첩<input type="radio" name="union" value="이중간첩">
+            </fieldset>
+            <fieldset>
+                <legend>감명 깊었던 확장팩</legend>
+                오리지날<input type="checkbox" name="life" value="오리지날">
+                불타는 성전<input type="checkbox" name="life" value="불타는 성전">
+                리치왕의 분노<input type="checkbox" name="life" value="리치왕의 분노">
+                대격변<input type="checkbox" name="life" value="대격변">
+            </fieldset>
+                <fieldset>
+                <legend>좋아했엇던 종족(호드)</legend>
+                오크<input type="checkbox" name="tribe" value="오크">
+                트롤<input type="checkbox" name="tribe" value="트롤">
+                타우렌<input type="checkbox" name="tribe" value="타우렌">
+                언데드<input type="checkbox" name="tribe" value="언데드">
+                고블린<input type="checkbox" name="tribe" value="고블린">
+                블러드 엘프<input type="checkbox" name="tribe" value="블러드 엘프">
+            </fieldset>
+            <fieldset>
+                <legend>좋아했엇던 종족(얼라이언스)</legend>              
+                인간<input type="checkbox" name="species" value="인간">
+                드워프<input type="checkbox" name="species" value="드워프">
+                노움<input type="checkbox" name="species" value="노움">
+                나이트 엘프<input type="checkbox" name="species" value="나이트 엘프">
+                드레나이<input type="checkbox" name="species" value="드레나이">
+                늑대인간<input type="checkbox" name="species" value="늑대인간">
+            </fieldset>
+            <br>
+            <textarea name="message" rows="5" cols="30">감상평을 적어주세요.</textarea> 
+        <br>
+            <input type="submit" id="submit" value="제출">
+            <script>
+                function clickEvent() {
+                confirm("한 학기 동안 감사했습니다 교수님.");
+                }
+                const submit = document.getElementById("submit");
+                submit.addEventListener("click", clickEvent);
+                </script>
+        </form>
+    </body>
+</html>

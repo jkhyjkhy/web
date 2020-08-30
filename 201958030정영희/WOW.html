@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+    <head>
+   <title>내가 가장 사랑했엇던 게임</title>
+ <style>
+header{margin-left: 20%;
+background-image: url("media/title2.png");
+background-size: 30% 100%;
+background-repeat: no-repeat;
+}
+#title{
+    width : 100%;
+    background-color: none;
+}
+body{ background : url("media/burn.png");}
+#head-line{ background : url("media/header.png");
+        width : 100%;
+        }
+#menubar{
+    margin : 1%
+}
+#menubar ul{
+    text-align : center;
+    margin-left: 10%;
+    padding : 0;
+    width : 80%;
+}
+#menubar ul li{
+   border: 3px ridge;
+    background:olive;
+    margin: 1mm;
+    border-color : olivedrab;
+    display : inline-block;
+    list-style-type : none;
+    padding : 0px 15px;
+}
+#menubar ul li a{
+    
+    font-size : 15px;
+    color : aliceblue;
+    text-decoration: none;
+}
+#menubar ul li a:hover {
+    color : yellow;
+}
+#jollang{
+    border: 2;
+}
+
+.ss{margin-left:44%;
+border-radius: 50px;
+background-color: darkorange;
+width: 150px;
+padding: 20px;
+}
+#adv{
+    text-align : left;
+
+}
+#black{
+    color:black;
+    font-size: 18px;
+}
+#open{ 
+    text-align : center;
+margin:10px;
+}
+#head-title{
+background-image: url("media/header.png");
+    text-align : center;
+    font-size : 30;
+    color : black;
+}
+
+
+</style>
+</head>
+<body>
+    <div id="title">
+    <a href="wow.html"><img src="media/title.png" width=35%; style="margin-left: auto; margin-right: auto; display: block;"></a>
+    </div>
+  <hr id="jollang">
+    <div id="head-title">
+            <h3><it><strong>
+                <span id="black"><it>Welcome to World Of Warcraft!</it></span>
+                <br>
+                <span>아제로스에 오신것을 환영합니다.</span>
+            </strong></it></h3>
+     
+        </div>
+    <div class="ss" ><span id="adv"><strong>MENU 접기/펼치기</strong></span></div>
+    <div class="aa" style="width:100%; height:100%;">
+            <nav id="menubar">
+                    <ul>
+                        <li><a href="오리지날.html">오리지널</a></li>
+                        <li><a href="불타는 성전.html">불타는 성전</a></li>
+                        <li><a href="리치왕의 분노.html">리치왕의 분노</a></li>
+                        <li><a href="대격변.html">대격변</a></li>
+                        <div id="head-line">
+                            <img src="media/horde.png" width="32%" >
+                            <img src ="media/head.jpg" width ="32%" >
+                            <img src="media/alliance.jpg" width = "34%"> 
+                        </div>
+                    </ul>
+            </nav>
+    </div>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+     $(".ss").click(function(){
+           $(".aa").slideToggle(1000);
+     });
+    });
+    </script>
+<br><br><br><br><br>
+<audio src="media/call to arms.mp3" controls="controls"></audio><br>
+     <strong><span style="text-align: center; font-size: large;">
+        이 웹 페이지는 제가 가장 좋아했엇던 '월드 오브 워크래프트'라는 게임을 소개하는 페이지 입니다.<br>
+        다만 모든 확장팩이 아닌 제가 클래식으로 플레이해본 '오리지널', 사촌형이 플레이 하던것을 지켜보기만 한 '불타는 성전'<br>
+        그리고 제가 플레이 해본 '리치왕의 분노'와 '대격변' 확장팩까지만 다루었습니다.<br>
+    </span></strong>
+    <a href="보물상자.html"><img src="media/chestbox.png" width="15px" height="auto"></a>
+</body>
+</html>
